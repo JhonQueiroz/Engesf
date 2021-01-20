@@ -1,0 +1,546 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ENGESF</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="engesf, engenharia, construção, elétrica, solar, sustentável, civil, senador pompeu"/>
+
+	<link rel="shortcut icon" href="favicon.ico">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script src="js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+
+<style>
+
+.row > .column {
+  padding: 0 8px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: center;
+  width: 100%;
+}
+.modal {
+  display: none;
+  position: center;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 65%;
+  max-width: 1000px;
+}
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 50px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+.mySlides {
+  display: none;
+}
+.cursor {
+  cursor: pointer;
+}
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 30px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.numbertext {
+  color: green;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+img {
+  margin-bottom: -4px;
+}
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+.demo {
+  opacity: 0.6;
+}
+.active,
+.demo:hover {
+  opacity: 1;
+}
+img.hover-shadow {
+  transition: 0.3s;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+
+<style>
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+.btn.active {
+  background-color: green;
+  color: white;
+}
+</style>
+
+	<div id="fh5co-page">
+  <a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+	<aside id="fh5co-aside" role="complementary" class="border js-fullheight">
+	<center><a href="home.html"><img src="images/logo.png"></a></center>
+	&ensp;
+
+			<h1 id="fh5co-logo"><a href="home.html">ENGESF</a></h1>
+			<nav id="fh5co-main-menu" role="navigation">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="servicos.html">Serviços</a></li>
+					<li class="fh5co-active"><a href="portfolio.html">Portfólio</a></li>
+					<li><a href="sobre.html">sobre</a></li>
+					<li><a href="contato.html">Contato</a></li>
+				</ul>
+			</nav>
+
+			<div class="fh5co-footer">
+				<p><small>Nossas redes</span></small></p>
+				<ul>
+					<li><a href="#"><i class="icon-facebook2"></i></a></li>
+					<li><a href="https://wa.me/5585991670547"><i class="icon-whatsapp"></i></a></li>
+					<li><a href="mailto:geraldo@engesf.com?subject="link HTML><i class="icon-mail5"></i></a></li>
+				</ul>
+			</div>
+		</aside>
+
+		<div id="fh5co-main">
+			<div class="fh5co-narrow-content">
+				<h2 class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">Portfólio</h2>
+				<div class="row row-bottom-padded-md">
+
+<center>
+<div id="myBtnContainer" class="fh5co-heading animate-box" data-animate-effect="fadeInLeft">
+  <button class="btn active" onclick="filterSelection('all')"> Todos</button>
+  <button class="btn" onclick="filterSelection('cc')"> Construção Civil</button>
+  <button class="btn" onclick="filterSelection('ee')"> Engenharia Elétrica</button>
+  <button class="btn" onclick="filterSelection('es')"> Energias Sustentáveis</button>
+</div>
+</center>
+
+<br>
+
+  <div class="column">
+  	<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+  	<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+  	<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+  	<div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column" class="filterDiv ee">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp13.jpg" style="width:100%" onclick="openModal();currentSlide(13)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp14.jpg" style="width:100%" onclick="openModal();currentSlide(14)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp15.jpg" style="width:100%" onclick="openModal();currentSlide(15)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp16.jpg" style="width:100%" onclick="openModal();currentSlide(16)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp17.jpg" style="width:100%" onclick="openModal();currentSlide(17)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp18.jpg" style="width:100%" onclick="openModal();currentSlide(18)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp19.jpg" style="width:100%" onclick="openModal();currentSlide(19)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp20.jpg" style="width:100%" onclick="openModal();currentSlide(20)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp21.jpg" style="width:100%" onclick="openModal();currentSlide(21)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp22.jpg" style="width:100%" onclick="openModal();currentSlide(22)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp23.jpg" style="width:100%" onclick="openModal();currentSlide(23)" class="hover-shadow cursor filterDiv ee">
+  </div>
+  <div class="column">
+    <div class="col-md-3 col-sm-6 col-padding text-center animate-box">
+    <img src="images/port_senador/sp24.jpg" style="width:100%" onclick="openModal();currentSlide(24)" class="hover-shadow cursor filterDiv ee">
+  </div>
+<!--PROJETO 1 FIM-->
+
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 24</div>
+      <img src="images/port_senador/sp1.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da BR 226, trecho entre o viaduto da via ferrea à ponte do Rio Banabuiú em Senador Pompeu-Ce.</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 24</div>
+      <img src="images/port_senador/sp2.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da BR 226, trecho entre o viaduto da via ferrea à ponte do Rio Banabuiú em Senador Pompeu-Ce.</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 24</div>
+      <img src="images/port_senador/sp3.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da BR 226, trecho entre o viaduto da via ferrea à ponte do Rio Banabuiú em Senador Pompeu-Ce.</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 24</div>
+      <img src="images/port_senador/sp4.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da BR 226, trecho entre o viaduto da via ferrea à ponte do Rio Banabuiú em Senador Pompeu-Ce.</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 24</div>
+      <img src="images/port_senador/sp5.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da Avenida Audísio Vieira do Nascimento em Senador Pompeu-Ce.</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 24</div>
+      <img src="images/port_senador/sp6.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da Avenida Audísio Vieira do Nascimento em Senador Pompeu-Ce.</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 24</div>
+      <img src="images/port_senador/sp7.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da Rua Antonio soares em Senador Pompeu-Ce</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 24</div>
+      <img src="images/port_senador/sp8.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da Rua Antonio soares em Senador Pompeu-Ce</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 24</div>
+      <img src="images/port_senador/sp9.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da BR 226, trecho entre o viaduto da via ferrea à ponte do Rio Banabuiú em Senador Pompeu-Ce.</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">10 / 24</div>
+      <img src="images/port_senador/sp10.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da Avenida Audísio Vieira do Nascimento em Senador Pompeu-Ce.</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">11 / 24</div>
+      <img src="images/port_senador/sp11.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da Avenida Audísio Vieira do Nascimento em Senador Pompeu-Ce.</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">12 / 24</div>
+      <img src="images/port_senador/sp12.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da Rua Antonio soares em Senador Pompeu-Ce</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">13 / 24</div>
+      <img src="images/port_senador/sp13.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da Praça Cristina Pessoa em Senador Pompeu-Ce.</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">14 / 24</div>
+      <img src="images/port_senador/sp14.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da rua Franco Magalhães em Senador Pompeu-Ce</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">15 / 24</div>
+      <img src="images/port_senador/sp15.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da rua Franco Magalhães em Senador Pompeu-Ce</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">16 / 24</div>
+      <img src="images/port_senador/sp16.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da Rua Antonio soares em Senador Pompeu-Ce</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">17 / 24</div>
+      <img src="images/port_senador/sp17.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da Rua Antonio soares em Senador Pompeu-Ce</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">18 / 24</div>
+      <img src="images/port_senador/sp18.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da rua Franco Magalhães em Senador Pompeu-Ce</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">19 / 24</div>
+      <img src="images/port_senador/sp19.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da Praça Cristina Pessoa em Senador Pompeu-Ce.</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">20 / 24</div>
+      <img src="images/port_senador/sp20.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da Avenida Audísio Vieira do Nascimento em Senador Pompeu-Ce.</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">21 / 24</div>
+      <img src="images/port_senador/sp21.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da rua Franco Magalhães em Senador Pompeu-Ce</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">22 / 24</div>
+      <img src="images/port_senador/sp22.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da rua Franco Magalhães em Senador Pompeu-Ce</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">23 / 24</div>
+      <img src="images/port_senador/sp23.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da Praça Cristina Pessoa em Senador Pompeu-Ce.</div>
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">24 / 24</div>
+      <img src="images/port_senador/sp24.jpg" style="width:100%">
+      <div class="caption-container">Iluminação da rua Franco Magalhães em Senador Pompeu-Ce</div>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  </div>
+</div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.flexslider-min.js"></script>
+	<script src="js/main.js"></script>
+
+<!--Script do slide-->
+<script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+<!--Script do filtro-->
+<script>
+filterSelection("all")
+function filterSelection(c) {
+  var x, i;
+  x = document.getElementsByClassName("filterDiv");
+  if (c == "all") c = "";
+  for (i = 0; i < x.length; i++) {
+    w3RemoveClass(x[i], "show");
+    if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+  }
+}
+
+function w3AddClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+  }
+}
+
+function w3RemoveClass(element, name) {
+  var i, arr1, arr2;
+  arr1 = element.className.split(" ");
+  arr2 = name.split(" ");
+  for (i = 0; i < arr2.length; i++) {
+    while (arr1.indexOf(arr2[i]) > -1) {
+      arr1.splice(arr1.indexOf(arr2[i]), 1);     
+    }
+  }
+  element.className = arr1.join(" ");
+}
+
+// Add active class to the current button (highlight it)
+var btnContainer = document.getElementById("myBtnContainer");
+var btns = btnContainer.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function(){
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+</script>
+
+	</body>
+</html>
+

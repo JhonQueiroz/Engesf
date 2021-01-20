@@ -1,0 +1,154 @@
+/*------------------------------------------------------------------
+    IMPORT FONTS
+-------------------------------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+
+/*------------------------------------------------------------------
+    IMPORT FILES
+-------------------------------------------------------------------*/
+
+@import url(css/animate.css);
+@import url(css/animate.min.css);
+@import url(css/bootstrap-touch-slider.css);
+@import url(css/flaticon.css);
+@import url(css/timeline.min.css);
+@import url(css/prettyPhoto.css);
+@import url(css/owl.carousel.css);
+@import url(css/font-awesome.min.css);
+
+
+/*------------------------------------------------------------------
+    TIME LINE
+-------------------------------------------------------------------*/
+
+.logos img {
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+    opacity: 0.3;
+}
+
+.logos img:hover {
+    opacity: 1;
+}
+
+.desc h3 i {
+    color: #9dc15b;
+    font-size: 37px;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.desc {
+    padding: 30px;
+    position: relative;
+    background: #000;
+    border: 1px solid #111111;
+}
+
+.testi-meta {
+    display: block;
+    margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.testi-meta img{
+	display: inline-block !important; 
+}
+
+.testimonial h4 {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 13px 0 0;
+}
+
+.testimonial img {
+    max-width: 55px;
+}
+
+.testimonial small {
+    margin-top: 7px;
+    font-size: 16px;
+    display: block;
+}
+
+.testimonial {
+    background-color: transparent;
+	max-width: 760px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.testimonial h3 {
+    padding: 0 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.testimonial small,
+.testimonial .lead {
+    background-color: transparent;
+    color: #aaa;
+    display: block;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.testimonial p:after {
+    display: none;
+}
+
+.testi-carousel.owl-carousel .owl-item.active.center .testimonial{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/**-------------- inner Page css ---------------**/
+
+#testimonial-box .testimonial h3{
+	color: #ffffff;
+}
+
+#testimonial-box .desc:hover{
+	background: #9dc15b;
+	border: 1px solid #9dc15b;
+}
+
+#testimonial-box .desc:hover .lead{
+	color: #121212;
+}
+
+.img-bg-01{
+	background-color: green;
+	background-size: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
